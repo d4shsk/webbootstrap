@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web</title>
+    <style>
+        .col-border {
+            border: 1px dashed #ccc;
+            padding: 10px;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row align-items-center">
+        <div class="col-2 col-border">Левая (2)</div>
+
+        <div class="col-8">
+          <button id="showTimeBtn" class="btn btn-danger btn-lg w-100">
+            Показать время
+          </button>
+        </div>
+
+        <div class="col-2 col-border">Правая (2)</div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="timeModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Шарманов Даниил</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center fs-3" id="luxonOutput">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Закрыть
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
